@@ -15,8 +15,8 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
     let nombre = document.getElementById("nombre").value.trim();
     let pais = document.getElementById("pais").value.trim();
     let numero = document.getElementById("numero").value.trim();
-    createPost(nombre,pais,numero);
-    document.getElementById("f1").reset();
+    crearPilotos(nombre,pais,numero);
+    document.getElementById("drivers").reset();
   }
 
   function crearPilotos(nombre, pais, numero){
