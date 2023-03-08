@@ -3,17 +3,23 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
   .then(data => {
     const drivers = data.MRData.DriverTable.Drivers;
     drivers.forEach(driver => {
-      crearPilotos(driver.givenName + ' ' + driver.familyName + ' ' + driver.nationality);
+      crearPilotos( driver.givenName + ' ' + driver.familyName, driver.driverId, driver.nationality);
     });
   })
   .catch(error => {
     console.log(error);
   });
 
-function crearPilotos(contenido){
+function crearPilotos(nombre, pais, id){
     let ul = document.createElement("ul");
     let li = document.createElement("li");
-    li.innerText = contenido;
+    let li1 = document.createElement("li");
+    let li2 = document.createElement("li");
+    li.innerText = nombre;
+    li1.innerText = pais;
+    li2.innerText = id
     ul.appendChild(li);
+    ul.appendChild(li1);
+    ul.appendChild(li2);
     document.getElementById("pilots").appendChild(ul);
 }
