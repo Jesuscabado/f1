@@ -1,0 +1,60 @@
+img{
+    width:250px;
+    height: 50px;
+}
+
+.barrainicio{
+    text-align: center;
+    
+}
+
+
+#titulos{
+    list-style: none;
+    display: flex;
+    background-color: red;
+    text-align: center;
+}
+
+
+
+#titulos li a{
+    text-align: none;
+    color:#fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+#buscarF1{
+    background-color: red;
+}
+
+.hamburguesa{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:980px){
+    #titulos{
+        display: none;
+    }
+    .hamburguesa{
+        display:block;
+    }
+    #titulos{
+        display: block;
+        position: absolute;
+        right:0;
+        top: 75px;
+        background-color: red;
+        width: 180px;
+        display: block !important;
+    }
+    #titulos li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
