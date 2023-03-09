@@ -11,6 +11,7 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
   });
 
   function createF1Event(evento) {
+    
     evento.preventDefault();
     let nombre = document.getElementById("nombre").value.trim();
     let pais = document.getElementById("pais").value.trim();
