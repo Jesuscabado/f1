@@ -3,7 +3,7 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
   .then(data => {
     const drivers = data.MRData.DriverTable.Drivers;
     drivers.forEach(driver => {
-      crearPilotos( driver.givenName + ' ' + driver.familyName, driver.permanentNumber, driver.nationality);
+      crearPilotos( driver.givenName + ' ' + driver.familyName, driver.permanentNumber, driver.nationality, driver.code);
     });
   })
   .catch(error => {
@@ -19,16 +19,26 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
     document.getElementById("drivers").reset();
   }
 
-  function crearPilotos(nombre, pais, numero){
+  function crearPilotos(nombre, pais, numero,id){
     let ul = document.createElement("ul");
+     ul.setAttribute("id", id); 
     let li = document.createElement("li");
     let li1 = document.createElement("li");
     let li2 = document.createElement("li");
+    let li3 = document.createElement("li");
+    let img= document.createElement("img");
+    img.setAttribute("src",`image/${id}.png`);
     li.innerText = nombre;
     li1.innerText = pais;
     li2.innerText = numero;
+    li3.appendChild(img);
     ul.appendChild(li);
     ul.appendChild(li1);
     ul.appendChild(li2);
+    ul.appendChild(li3);
     document.getElementById("drivers").appendChild(ul);
-}
+    
+
+  }
+
+
