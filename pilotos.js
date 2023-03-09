@@ -3,7 +3,7 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
   .then(data => {
     const drivers = data.MRData.DriverTable.Drivers;
     drivers.forEach(driver => {
-      crearPilotos( driver.givenName + ' ' + driver.familyName, driver.permanentNumber, driver.nationality, driver.code);
+      crearPilotos(driver.code, driver.givenName + ' ' + driver.familyName, driver.permanentNumber, driver.nationality);
     });
   })
   .catch(error => {
@@ -19,26 +19,30 @@ fetch('http://ergast.com/api/f1/2023/drivers.json')
     document.getElementById("drivers").reset();
   }
 
-  function crearPilotos(nombre, pais, numero,id){
+  function crearPilotos(id, nombre, pais, numero){
     let ul = document.createElement("ul");
-     ul.setAttribute("id", id); 
-    let li = document.createElement("li");
-    let li1 = document.createElement("li");
-    let li2 = document.createElement("li");
-    let li3 = document.createElement("li");
-    let img= document.createElement("img");
-    img.setAttribute("src",`image/${id}.png`);
-    li.innerText = nombre;
-    li1.innerText = pais;
-    li2.innerText = numero;
-    li3.appendChild(img);
-    ul.appendChild(li);
-    ul.appendChild(li1);
-    ul.appendChild(li2);
-    ul.appendChild(li3);
+     ul.setAttribute("id", "pilotos"); 
+    let nombreApellido = document.createElement("li");
+    let numeros = document.createElement("li");
+    let nacionalidad = document.createElement("li");
+    let foto = document.createElement("li");
+    let img = document.createElement("img");
+/*     let link = document.createElement("li");
+    let a = document.createElement("a") */;
+    img.setAttribute("src",`image/${id}.png`);  
+    nombreApellido.innerText = nombre;
+    numeros.innerText = pais;
+    nacionalidad.innerText = numero;
+    foto.appendChild(img);
+/*     link.appendChild(url);
+    link.appendChild(a) */;
+    ul.appendChild(foto);
+    ul.appendChild(nombreApellido);
+    ul.appendChild(numeros);
+    ul.appendChild(nacionalidad);
+   /*  ul.appendChild(link); */
+    
     document.getElementById("drivers").appendChild(ul);
     
 
   }
-
-

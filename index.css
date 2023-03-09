@@ -1,4 +1,4 @@
-img{
+#logoF1{
     width:250px;
     height: 50px;
 }
@@ -7,6 +7,7 @@ img{
     text-align: center;
     
 }
+
 
 
 #titulos{
@@ -22,13 +23,14 @@ img{
     text-align: none;
     color:#fff;
     margin: 0 15px;
-    padding: 3px;
+    padding: auto;
     transition: .5s;
     text-decoration: none;
 }
 
 #buscarF1{
     background-color: red;
+    padding: 10px;
 }
 
 .hamburguesa{
@@ -36,6 +38,15 @@ img{
     cursor: pointer;
 }
 
+h2{
+    font-size: 50px;
+}
+
+#pilotos{
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+}
 
 @media screen and (max-width:980px){
     #titulos{
