@@ -3,7 +3,7 @@ document.getElementById("buscadorF1").addEventListener("keyup",filtrarF1);
 function filtrarF1(){
     console.log(document.getElementById("buscadorF1"));
     let text = document.getElementById("buscadorF1").value;
-    let section = document.getElementById("drivers");
+    let section = document.getElementById("f1");
     let titulos = section.querySelectorAll("ul > li");
     titulos = [...titulos]; //titulos = Array.from(titulos);
     let titulosFiltrados = titulos.filter(nombre => nombre.innerText.toLowerCase().includes(text) );

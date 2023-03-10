@@ -46,6 +46,11 @@ h2{
     font-size: 30px;
     list-style: none;
     text-align: center;
+    border:5px solid#000;
+    border-radius: 20px;
+    margin-right: 670px;
+    padding-bottom: 15px;
+    padding-right: 40px;
 }
 
 @media screen and (max-width:980px){
