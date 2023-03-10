@@ -5,6 +5,8 @@
 
 #resultados, li {
     list-style:none;
+
+    
    
   
 }
@@ -15,7 +17,7 @@
     height: 10%;
     display: flex;
     text-align: center;
-    display: flex;
+    
        
 }
 #copa2{
@@ -24,16 +26,16 @@
   height: 10%;
   display: flex;
   text-align: center;
-  display: flex;
-     
+  
+       
 }
 #copa3{
   width: 200px;
   padding: 10px;
   height: 10%;
-  display: flex;
+  display:flex;
   text-align: center;
-  display: flex;
+  
      
 }
 
