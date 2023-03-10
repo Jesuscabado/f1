@@ -1,0 +1,34 @@
+#drivers{
+    border: 2px solid#ff0000;
+    border-radius: 20px;
+    margin-top: 50px;
+    
+}
+
+.pilotos{
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+    border: 5px solid#000;
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-right:70px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+#imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+} 
+
+#retroceder-pilotos{
+    width: 50px;
+}
