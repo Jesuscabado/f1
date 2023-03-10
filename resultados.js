@@ -44,7 +44,7 @@ fetch('http://ergast.com/api/f1/current/last/results.json')
         let position = result.position; //segunda capa base datos
         let driverName = result.Driver.givenName;//tercera capa de datos
         let driverFamilyName = result.Driver.familyName;//tercera capa de datos
-        let formateResult =`posicion: ${position} piloto: ${driverName} ${driverFamilyName}`;//creamos una nueva variable "formateResult" que nos recoge los datos de los pilotos (segunda capa) y su posición en la carrera (tercera capa).
+        let formateResult =`${position} ${driverName} ${driverFamilyName}`;//creamos una nueva variable "formateResult" que nos recoge los datos de los pilotos (segunda capa) y su posición en la carrera (tercera capa).
         let li =document.createElement("li"); //Creamos el listado de la segunda y tercera capa (Driver = segunda capa y resto variables tercera capa)
         li.innerText = formateResult;
         ul.appendChild(li);
