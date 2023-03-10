@@ -26,6 +26,8 @@
     padding: auto;
     transition: .5s;
     text-decoration: none;
+    font-size: 30px;
+    
 }
 
 #buscarF1{
@@ -40,19 +42,6 @@
 
 h2{
     font-size: 50px;
-}
-
-#pilotos{
-    border:5px solid#000;
-    border-radius: 20px;
-    margin-left: 670px;
-    margin-right: 670px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px;
-    font-size: 30px;
-    list-style: none;
-    text-align: center;
 }
 
 @media screen and (max-width:980px){
