@@ -39,18 +39,3 @@ fetch('http://ergast.com/api/f1/2023/circuits.json')
     document.getElementById("circuits").appendChild(ul);
 }
 
-/* intento carrusel 
-const carousel = document.querySelector("circuits");
-const images = document.querySelectorAll("circuitos");
-
-let index = 0;
-
-function nextImage() {
-  index++;
-  if (index > circuitos.length - 1) {
-    index = 0;
-  }
-  carousel.style.transform = `translateX(-${index * 100}%)`;
-}
-
-setInterval(nextImage, 3000); */
