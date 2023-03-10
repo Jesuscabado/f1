@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pilotos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
     <title>F1</title>
 </head>
 <body>  
     <header class="barrainicio">
             <h1 href="#f1"><img id="logoF1" src="image/formula-1-logo-5-3.png" alt=""></h1>
             <ul id="titulos">
-                <li><a href="#pilotos" onclick="seleccionar()">Pilotos</a></li>
-                <li><a href="#circuitos" onclick="seleccionar()">Circuitos</a></li>
+                <li><a href="#drivers" onclick="seleccionar()">Pilotos</a></li>
+                <li><a href="#circuits" onclick="seleccionar()">Circuitos</a></li>
                 <li><a href="#resultados" onclick="seleccionar()">Clasificación</a></li>
             </ul>
             <section id="buscarF1">
@@ -27,17 +31,34 @@
     </header>
     <div id="f1">
         <section id="drivers">
-        <h2 id="tituloDrivers">Pilotos</h2>
-        <script src="pilotos.js"></script>
-    </section>
-    <section id="circuits">
-        <h2 id="tituloCircuits">Circuitos</h2>
-        <script src="circuitos.js"></script>
-    </section>
-    <section id="resultados">
-        <h2 id="tituloResultados">Clasificacion</h2>
-        <script src="resultados.js"></script>
-    </section>
+            <h2 id="tituloDrivers">Pilotos</h2>
+            <script src="carousel.js"></script>
+            <script src="pilotos.js"></script>
+            <div class="carousel">
+                <button id="retroceder-pilotos"><i class="fa-solid fa-chevron-left"></i></button>
+                <div id="carousel-pilotos"></div>
+                <button id="avanzar-pilotos"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="controles">
+                <button id="play-pilotos">Play</button>
+                <button id="stop-pilotos" disabled>Stop</button>
+            </div>
+        </section>
+        <section id="circuits">
+            <h2 id="tituloCircuits">Circuitos</h2>
+            <script src="circuitos.js"></script>
+        </section>
+        <section id="resultados">
+            <h2 id="tituloResultados">Clasificacion</h2>
+            <script src="resultados.js"></script>
+                <h3 id="copa1">1ª Posición</h3>
+                <img id="copa1" src="image/copa1.png">
+                <h3 id="copa2">2ª Posición</h3>
+                <img id="copa2"src="image/copa2.png">
+                <h3 id="copa3">3ª Posición</h3>
+                <img id="copa3"src="image/copa3.png">
+        <section>
+        </section>
     </div>
     
 </body>

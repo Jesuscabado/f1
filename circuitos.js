@@ -3,7 +3,7 @@ fetch('http://ergast.com/api/f1/2023/circuits.json')
   .then(data => {
     const circuits = data.MRData.CircuitTable.Circuits;
     circuits.forEach(circuit=> {
-      console.log(circuit);
+
       crearCircuitos( circuit.circuitId, circuit.circuitName, circuit.url, circuit.Location.locality, circuit.Location.country);
     });
   })
