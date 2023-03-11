@@ -1,21 +1,19 @@
 #circuitos{
-    width: 350px;
+    max-width: 35%;
     border:5px solid#000;
     border-radius: 20px;
-    margin: 40px;
- /*    margin-left: 670px;
-    margin-right: 670px; */
+    margin: 80px;
+    margin-left: 170px;
+    margin-right: 170px;
     padding: 40px;
- /*    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-right: 40px; */
     font-size: 30px;
-    list-style: none;
-    text-align: center;
-    flex-wrap: nowwrap;
+    display: inline-block;
+
+
+    
 }
 
-#circuits/* , #tituloCircuits */{
+#circuits{
 
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
