@@ -1,43 +1,21 @@
-#resultados {
-    border:5px solid red;
-    border-radius: 20px;
-  }
-
 #resultados, li {
     list-style:none;
-
-    
-   
+    text-align: justify;
+  }  
+#tituloResultados {
+  text-align: left;
+  font-size:5vw;
+}
+#resultados {
+    background-image: url(https://www.formula1.com/etc/designs/fom-website/images/patterns/gray3-x1.png);
+    background-size: auto;
+}
+img#premio {
   
+  justify-content: auto;
+  align-items: center;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+ 
 }
-
-#copa1{
-    width: 200px;
-    padding: 10px;
-    height: 10%;
-    display: flex;
-    text-align: center;
-    
-       
-}
-#copa2{
-  width: 200px;
-  padding: 10px;
-  height: 10%;
-  display: flex;
-  text-align: center;
-  
-       
-}
-#copa3{
-  width: 200px;
-  padding: 10px;
-  height: 10%;
-  display:flex;
-  text-align: center;
-  
-     
-}
-
-
-
