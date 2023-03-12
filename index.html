@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="resultstyle.css">
-    <link rel="stylesheet" href="circuitos.css">
-    <link rel="stylesheet" href="pilotos.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/resultstyle.css">
+    <link rel="stylesheet" href="css/circuitos.css">
+    <link rel="stylesheet" href="css/pilotos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
             </ul>
             <section id="buscarF1">
                 <input type="text" id="buscadorF1" placeholder="buscar...">
-                <script src="index.js"></script>
+                <script src="js/index.js"></script>
               </section>
             <div class="hamburguesa" onclick="mostrarOocultarmenu()">
                 <i class="fa-solid fa-bars"></i>
@@ -35,10 +35,14 @@
 
     </header>
         <div id="f1">
-        <section id="drivers">
+        <section id="videoF1">
+            <video controls autoplay ></video>
+            <video src="video/videof1.mp4" autoplay muted loop></video>
+        </section>
+            <section id="drivers">
             <h2 id="tituloDrivers">Pilotos</h2>
-            <script src="carousel.js"></script>
-            <script src="pilotos.js"></script>
+            <script src="js/carousel.js"></script>
+            <script src="js/pilotos.js"></script>
             <div class="carousel">
                 <button id="retroceder-pilotos"><i class="fa-solid fa-chevron-left"></i></button>
                 <div id="carousel-pilotos"></div>
@@ -51,14 +55,14 @@
         </section>
         <section id="circuits">
             <h2 id="tituloCircuits">Circuitos</h2>
-            <script src="circuitos.js"></script>
+            <script src="js/circuitos.js"></script>
         </section>
 <!--Idoya:Está sección de resultados la he modificado en el HTML-->
         <section id="resultados">
             <h2 id="tituloResultados"><br>Clasificaciones<br></h2>
             <img id="premio" src = "image/copasinfondo.png"> 
             <!--<script src="premios.js"></script> lo he descartado porque no salen los datos-->
-            <script src="resultados.js"></script>
+            <script src="js/resultados.js"></script>
         </section>
 
 <!--Idoya: He añadido la sección footer y creados los iconos de redes sociales y partners-->    
