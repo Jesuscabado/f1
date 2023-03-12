@@ -1,3 +1,7 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
 #logoF1{
     width:250px;
     height: 50px;
@@ -8,16 +12,12 @@
     
 }
 
-
-
 #titulos{
     list-style: none;
     display: flex;
     background-color: red;
     text-align: center;
 }
-
-
 
 #titulos li a{
     text-align: none;
@@ -66,3 +66,56 @@ h2{
         padding: 10px 0;
     }
 }
+
+/*Idoya: He creado el CSS del footer*/
+
+footer{
+    background-color: #14141c;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+#partners{
+    width: 750px;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #14141c ;
+    color: white;
+  }
+  .fa-twitter {
+    background: #14141c ;
+    color: white;
+  }
+  .fa-instagram {
+    background: #14141c ;
+    color: white;
+  }
+  .fa-youtube {
+    background: #14141c ;
+    color: white;
+  }
+  footer, p{
+    color:#fff;
+    text-align: center;
+  }
+
