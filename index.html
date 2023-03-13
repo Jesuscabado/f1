@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/resultstyle.css">
+    <link rel="stylesheet" href="css/circuitos.css">
+    <link rel="stylesheet" href="css/pilotos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Idoya:Añado este link para incluir los logos de las redes sociales en el footer-->
+    <title>F1</title>
+</head>
+<body>  
+    <header class="barrainicio">
+        <!--Idoya:Añado el texto al alt del logo-->
+            <h1 href="#f1"><img id="logoF1" src="image/formula-1-logo-5-3.png" alt="logo de fórmula 1 rojo"></h1>
+            <ul id="titulos">
+                <li><a href="#drivers" onclick="seleccionar()">Pilotos</a></li>
+                <li><a href="#circuits" onclick="seleccionar()">Circuitos</a></li>
+                <li><a href="#resultados" onclick="seleccionar()">Clasificación</a></li>
+            </ul>
+            <section id="buscarF1">
+                <input type="text" id="buscadorF1" placeholder="buscar...">
+                <script src="js/index.js"></script>
+              </section>
+            <div class="hamburguesa" onclick="mostrarOocultarmenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+    </header>
+        <div id="f1">
+        <section id="videoF1">
+            <video controls autoplay ></video>
+            <video src="video/videoF1.mp4" autoplay muted loop></video>
+        </section>
+        <section id="drivers">
+            <h2 id="tituloDrivers">Pilotos</h2>
+            <script src="js/carousel.js"></script>
+            <script src="js/pilotos.js"></script>
+            <div class="carousel">
+                <button id="retroceder-pilotos"><i class="fa-solid fa-chevron-left"></i></button>
+                <div id="carousel-pilotos"></div>
+                <button id="avanzar-pilotos"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="controles">
+                <button id="play-pilotos"><i class="fa-solid fa-play"></i></button>
+                <button id="stop-pilotos" disabled><i class="fa-solid fa-stop"></i></button>
+        </div>
+        </section>
+        <section id="buscarF1">
+            <input type="text" id="buscadorF1" placeholder="buscar...">
+            <script src="js/index.js"></script>
+          </section>
+        <section id="circuits">
+            <h2 id="tituloCircuits">Circuitos</h2>
+            <script src="js/circuitos.js"></script>
+        </section>
+<!--Idoya:Está sección de resultados la he modificado en el HTML-->
+        <section id="resultados">
+            <h2 id="tituloResultados"><br>Clasificaciones<br></h2>
+            <img id="premio" src = "image/copasinfondo.png"> 
+            <!--<script src="premios.js"></script> lo he descartado porque no salen los datos-->
+            <script src="js/resultados.js"></script>
+        </section>
+
+<!--Idoya: He añadido la sección footer y creados los iconos de redes sociales y partners-->    
+<footer> 
+    <div class="iconosrrss">
+        <a href="https://www.facebook.com/Formula1" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/f1" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/f1/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/F1" target="_blank" class="fa fa-youtube"></a>
+    </div>
+    <img id="partners" src = "image/partners.png" alt="logo partners">
+    <p>© 2003-2023 Formula One World Championship Limited</p>
+  </footer>
+ </body>
+</html>
